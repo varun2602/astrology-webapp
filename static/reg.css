@@ -1,0 +1,22 @@
+#form
+{
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+}
+#reg
+{
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+}
+body
+{
+    background-image: url('horo11.jpg');
+    background-repeat: no-repeat;
+    background-size: 1600px 800px;
+}
+.ftext
+{
+    color: white;
+}

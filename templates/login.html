@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/login.css">
+    <title>login</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: cursive; font-weight: bold; color:white">LOG-IN</h1>
+    <form action="/login" method="POST" id="form" style = "text-align:center; font-family:cursive">
+        <input type="text" placeholder="username" name="name"><br><br>
+        <input type="password" placeholder="password" name="password"><br><br>
+        <input type="submit" value = "Log In">
+    </form>
+    <h2 id = "text2" style = "text-align:center; font-family: cursive; font-weight: bold; color:white">Don't have an account yet? Sign up below!</h2>
+    <p style = "text-align:center; font-family:cursive"><a href = "{{url_for('register')}}" id ="url">Sign Up</a></p>
+    <br>
+    <h2 style = "text-align:center"><a href ="{{url_for('verify')}}">FORGOT PASSWORD?</a></h2>
+
+</body>
+</html>

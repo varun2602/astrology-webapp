@@ -1,0 +1,24 @@
+#heading
+{
+    text-align: center;
+    font-family: cursive;
+}
+#head
+{
+    background-color: orange;
+}
+#head1
+{
+    image
+}
+body
+{
+    background-image: url('astro.jpg');
+}
+.para
+{
+    font-family: cursive;
+    font-size: large;
+    color: white
+
+}

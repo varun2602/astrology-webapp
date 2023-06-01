@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body
+        {
+        background-image: url('https://th.bing.com/th/id/R.817475d4faed53a07b748da706dff0da?rik=plHh%2f5%2fxMsBxeg&riu=http%3a%2f%2fshivashaktiyogaschool.com%2fwp-content%2fuploads%2f2017%2f11%2furl.jpeg&ehk=QVzND%2bemdJ8SnhiLZgBj8tBNevFAdrKh%2bpu5%2bAhL%2fEA%3d&risl=&pid=ImgRaw&r=0')
+        }
+    </style>
+    <title>Birth Details</title>
+</head>
+<body>
+    <div>
+        <h2 style = "text-align:center; font-family: cursive;">Please enter your birth details below</h2>
+    </div>
+    <br> <br>
+    <!--<form action = "{% if v == "birth-details" %} {{url_for('api')}} {% else %} {{url_for('advanced')}} {% endif %}" method = "POST" style = "text-align:center">-->
+    <!--<form action = "{% if v == 'birth-details' %}{{url_for('api')}}{% else %}{{url_for('advanced')}}{% endif %}" method = "POST" style = "text-align:center">-->
+    <form action = "{% if v == 'birth-details' %} {{url_for('api')}} {% elif v == 'advanced'%} {{url_for('advanced')}} {% else %}{{url_for('nakshatra')}}{% endif %}" method = "POST" style = "text-align:center">
+        <label style = "font-family:cursive; font-weight:bold">Birth Date</label>
+        <input type="date" data-date-inline-picker="true" name = "date" style = "width:250px" />
+        <br><br>
+        <label style = "font-family:cursive; font-weight:bold">Birth Time</label>
+        <input type="time" name="time" required />
+        <br><br>
+        <label style = "font-family:cursive; font-weight:bold">Birth city</label>
+        <input type = "text" name = "place" placeholder = "Birth Place">
+        <br><br>
+        <label style = "font-family:cursive; font-weight:bold" name = "ayanamsha">Ayanamsha</label>
+        <select>
+            <option value = "1">Lahiri</option>
+            <option value = "3">Raman</option>
+            <option value = "5">KP</option>
+        </select>
+        <br><br>
+        <input type = "submit">
+    </form>
+
+</body>
+</html>
