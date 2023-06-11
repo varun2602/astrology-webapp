@@ -316,6 +316,9 @@ def final_verify():
         forgot.pop(0)
         print(forgot)
         return redirect("/login")
+    
+if __name__ == "__main__":
+    app.run(debug = False, host = '0.0.0.0')
 
 
 
@@ -364,7 +367,7 @@ def final_verify():
 
 
 
-# TODO: Run through the route of birth details, fetch the birthdetails, return the nakshatra name and render the template
+# TO: Run through the route of birth details, fetch the birthdetails, return the nakshatra name and render the template
 # @app.route("/test")
 # def test():
 #     return render_template("Revati.html")
